@@ -1,0 +1,495 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;  /* Smooth scrolling enabled */
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2, h3 {
+    color: #749686;
+    font-weight: bold;
+}
+
+.navbar .logo h1 {
+    font-family: 'Times New Roman', serif;  /* Font for Naveen Jindal School of Management */
+}
+
+/* Sticky Navbar */
+.navbar {
+    background-color: #ff9900;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: #cc7a00;
+}
+
+/* Hero Section */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.2);  /* Transparent grey bars */
+    padding: 0 50px;
+}
+
+.hero-section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+                linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+                url('Group-pic-1024x634.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.7);  /* Darken overlay for better text visibility */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.cta-btn {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #cc7a00;
+}
+
+/* Choice Section */
+.welcome {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choice-card {
+    background-color: #006633;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for visibility */
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.choice-card h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.choice-card:hover {
+    transform: translateY(-10px);
+    background-color: #004d33;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 50px;
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.content-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-columns ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-columns li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.content-columns li.hoverable:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Factsheet Section */
+.factsheet-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.facts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fact-card {
+    background-color: #006633;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fact-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.fact-card p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.fact-card:hover {
+    transform: translateY(-10px);
+    background-color: #004d33;
+}
+
+.counter {
+    font-size: 1.7em;
+    color: #ff9900;
+}
+
+/* Rankings Section */
+.rankings-section {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.rankings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ranking-card {
+    background-color: #006633;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ranking-card h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ranking-card p {
+    font-size: 1.2em;
+}
+
+.ranking-card:hover {
+    transform: translateY(-10px);
+    background-color: #004d33;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #006633;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #cc7a00;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar .menu a {
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .choice-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content-columns {
+        flex-direction: column;
+    }
+
+    .content-columns ul {
+        padding: 0 20px;
+    }
+
+    .facts-container, .rankings-container {
+        flex-direction: column;
+   }
+
+}
+/* General Customization */
+
+/* Body */
+body {
+    background-color: #f5f5f5;  /* Customize overall background color */
+    color: #333333;  /* Customize overall font color */
+}
+
+/* Sticky Navbar */
+.navbar {
+    background-color: #ff9900;  /* Navbar background color */
+}
+
+.navbar .logo h1 {
+    color: #ffffff;  /* Customize logo text color */
+}
+
+.navbar .menu a {
+    color: white;  /* Customize menu links text color */
+}
+
+.navbar .menu a:hover {
+    color: #cc7a00;  /* Navbar hover text color */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #333333;  /* Customize hero section background */
+    color: #ffffff;  /* Customize hero text color */
+}
+
+.hero-section h1 {
+    color: #ff9900;  /* Customize hero heading color */
+}
+
+.hero-section p {
+    color: #ffffff;  /* Customize hero paragraph color */
+}
+
+.cta-btn {
+    background-color: #ff9900;  /* Customize button background */
+    color: white;  /* Customize button text */
+}
+
+.cta-btn:hover {
+    background-color: #cc7a00;  /* Button hover background */
+}
+
+/* About Section */
+.about-section {
+    background-color: #ffffff;  /* Customize about section background */
+    color: #333333;  /* Customize text color in about section */
+}
+
+.about-section h2 {
+    color: #ff6600b6;  /* Customize heading color in about section */
+}
+
+.about-section p {
+    color: #666666;  /* Customize paragraph color in about section */
+}
+
+/* Welcome Section (Are You A...) */
+.welcome {
+    background-color: #ffffff;  /* Customize welcome section background */
+    color: #333333;  /* Customize text color */
+}
+
+.welcome h2 {
+    color: #3b664f;  /* Customize heading color */
+}
+
+.choice-card {
+    background-color: #006633;  /* Customize choice card background */
+    color: white;  /* Customize choice card text */
+}
+
+.choice-card h3 {
+    color: #ffffff;  /* Customize choice card heading */
+}
+
+.choice-card:hover {
+    background-color: #004d33;  /* Customize choice card hover background */
+}
+
+/* Prospective Students Section */
+#prospective {
+    background-color: #d9f2d9;  /* Customize prospective section background */
+    color: #005500;  /* Customize prospective section text */
+}
+
+#prospective h2 {
+    color: #007700;  /* Customize heading color */
+}
+
+#prospective h3 {
+    color: #003300;  /* Customize subheading color */
+}
+
+#prospective ul li {
+    color: #005500;  /* Customize list item color */
+    background-color: #ffffff;  /* Customize list item background */
+}
+
+/* Current Students Section */
+#current {
+    background-color:#d9f2d9;  /* Customize current students section background */
+    color: #005500;  /* Customize text color */
+}
+
+#current h2 {
+    color: #007700;  /* Customize heading color */
+}
+
+#current h3 {
+    color: #003300;  /* Customize subheading color */
+}
+
+#current ul li {
+    color: #005500;  /* Customize list item text color */
+    background-color: #ffffff;  /* Customize list item background */
+}
+
+/* Alumni Section */
+#alumni {
+    background-color: #d9f2d9;  /* Customize alumni section background */
+    color: #005500;  /* Customize alumni section text color */
+}
+
+#alumni h2 {
+    color: #007700;  /* Customize heading color */
+}
+
+#alumni ul li {
+    color: #003300;  /* Customize list item text color */
+    background-color: #ffffff;  /* Customize list item background */
+}
+
+/* Factsheet Section */
+.factsheet-section {
+    background-color: #f0f0f0;  /* Customize factsheet background */
+    color: #333333;  /* Customize factsheet text */
+}
+
+.factsheet-section h2 {
+    color: #003300;  /* Customize heading color */
+}
+
+.fact-card {
+    background-color: #006633;  /* Customize fact card background */
+    color: white;  /* Customize fact card text */
+}
+
+.fact-card:hover {
+    background-color: #004d33;  /* Customize fact card hover background */
+}
+
+.fact-card h3 {
+    color: #e6e4e323;  /* Customize fact card heading */
+}
+
+.fact-card p {
+    color: #ffffff;  /* Customize fact card paragraph */
+}
+
+/* Rankings Section */
+.rankings-section {
+    background-color: #ffffff;  /* Customize rankings section background */
+    color: #333333;  /* Customize text color */
+}
+
+.rankings-section h2 {
+    color: #004d33;  /* Customize heading color */
+}
+
+.ranking-card {
+    background-color: #006633;  /* Customize ranking card background */
+    color: white;  /* Customize ranking card text */
+}
+
+.ranking-card:hover {
+    background-color: #004d33;  /* Customize ranking card hover background */
+}
+
+.ranking-card h3 {
+    color: #ff990091;  /* Customize ranking card heading */
+}
+
+.ranking-card p {
+    color: white;  /* Customize ranking card paragraph */
+}
+
+/* Footer */
+footer {
+    background-color: #006633;  /* Customize footer background */
+    color: white;  /* Customize footer text */
+}
+
+footer a {
+    color: #ff9900;  /* Customize footer link color */
+}
+
+footer a:hover {
+    color: #cc7a00;  /* Customize footer link hover color */
+}

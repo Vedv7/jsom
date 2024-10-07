@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Jindal School of Management | JSOM Navigator</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Naveen Jindal School of Management</h1>
+        </div>
+        <nav class="menu">
+            <a href="#about">About</a>
+            <a href="#prospective">Prospective Students</a>
+            <a href="#current">Current Students</a>
+            <a href="#alumni">Alumni</a>
+            <a href="#factsheet">Factsheet</a>
+            <a href="#rankings">Rankings</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <h1>Welcome to the JSOM Navigator</h1>
+            <p>Your One-Stop Hub for Success</p>
+            <button class="cta-btn" onclick="scrollToContent()">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- About JSOM Navigator Section -->
+    <section id="about" class="about-section">
+        <h2>About JSOM Navigator</h2>
+        <p>
+            JSOM Navigator is your one-stop solution for navigating resources at the Naveen Jindal School of Management, whether you’re a prospective student, current student, or alumni. Explore categories to find programs, career management resources, events, and much more.
+        </p>
+    </section>
+
+    <!-- "Are You A..." Section -->
+    <section class="welcome">
+        <h2>Are you a...</h2>
+        <div class="choice-container">
+            <div class="choice-card" onclick="toggleSection('prospective')">
+                <h3>Prospective Student</h3>
+            </div>
+            <div class="choice-card" onclick="toggleSection('current')">
+                <h3>Current Student</h3>
+            </div>
+            <div class="choice-card" onclick="toggleSection('alumni')">
+                <h3>Alumni</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prospective Students Section -->
+    <section id="prospective" class="content-section hidden">
+        <h2>Prospective Students</h2>
+        <div class="content-columns">
+            <div>
+                <h3>Graduate</h3>
+                <ul>
+                    <li class="hoverable">Program Overview</li>
+                    <li class="hoverable">Scholarships</li>
+                    <li class="hoverable">Submit Documents</li>
+                    <li class="hoverable">Comet Card</li>
+                    <li class="hoverable">UTD Healthcare</li>
+                    <li class="hoverable">Orientation Events</li>
+                    <li class="hoverable">On-Campus Opportunities</li>
+                    <li class="hoverable">Enrollment Queries</li>
+                    <li class="hoverable">UTD Grades</li>
+                    <li class="hoverable">Classes Enrollment</li>
+                    <li class="hoverable">GoPass</li>
+                    <li class="hoverable">JSOM Map</li>
+                    <li class="hoverable">OIT (Rent a Laptop and Stuff)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Undergraduate</h3>
+                <ul>
+                    <li class="hoverable">Program Overview</li>
+                    <li class="hoverable">Scholarships</li>
+                    <li class="hoverable">Submit Documents</li>
+                    <li class="hoverable">Comet Card</li>
+                    <li class="hoverable">UTD Health Center</li>
+                    <li class="hoverable">Orientation Events</li>
+                    <li class="hoverable">On-Campus Opportunities</li>
+                    <li class="hoverable">Enrollment Queries</li>
+                    <li class="hoverable">UTD Grades</li>
+                    <li class="hoverable">Classes Enrollment</li>
+                    <li class="hoverable">GoPass</li>
+                    <li class="hoverable">JSOM Map</li>
+                    <li class="hoverable">OIT (Rent a Laptop and Stuff)</li>
+                    <li class="hoverable">On-Campus Accommodation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Students Section -->
+    <section id="current" class="content-section hidden">
+        <h2>Current Students</h2>
+        <div class="content-columns">
+            <div>
+                <h3>Graduate</h3>
+                <ul>
+                    <li class="hoverable">JSOM Events</li>
+                    <li class="hoverable">UTD Events</li>
+                    <li class="hoverable">JSOM Clubs (Importance of Clubs)</li>
+                    <li class="hoverable">Networking Events</li>
+                    <li class="hoverable">Scholarships</li>
+                    <li class="hoverable">Internship Timeline</li>
+                    <li class="hoverable">JSOM Career Management Center (Resume, Headshots)</li>
+                    <li class="hoverable">UTD Career Management Center</li>
+                    <li class="hoverable">Handshake</li>
+                    <li class="hoverable">Grad Advising</li>
+                    <li class="hoverable">UREC Events</li>
+                    <li class="hoverable">On-Campus Opportunities</li>
+                    <li class="hoverable">Library and Student Unions</li>
+                    <li class="hoverable">JSOM Labs (Printing and Services)</li>
+                    <li class="hoverable">UTD Map</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Undergraduate</h3>
+                <ul>
+                    <li class="hoverable">JSOM Events</li>
+                    <li class="hoverable">Clubs</li>
+                    <li class="hoverable">Networking Events</li>
+                    <li class="hoverable">Scholarships</li>
+                    <li class="hoverable">Career Fairs</li>
+                    <li class="hoverable">Internship Timeline</li>
+                    <li class="hoverable">JSOM Career Management Center (Resume, Headshots)</li>
+                    <li class="hoverable">UTD Career Management Center</li>
+                    <li class="hoverable">Handshake</li>
+                    <li class="hoverable">Undergrad Advising</li>
+                    <li class="hoverable">UREC Events</li>
+                    <li class="hoverable">On-Campus Opportunities</li>
+                    <li class="hoverable">Library and Student Unions</li>
+                    <li class="hoverable">JSOM Labs (Printing and Services)</li>
+                    <li class="hoverable">UTD Map</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Alumni Section -->
+    <section id="alumni" class="content-section hidden">
+        <h2>Alumni</h2>
+        <div class="content-columns">
+            <ul>
+                <li class="hoverable">Jindal Connect</li>
+                <li class="hoverable">Donate</li>
+                <li class="hoverable">Mentor Programs</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- JSOM Factsheet Section -->
+    <section id="factsheet" class="factsheet-section">
+        <h2>JSOM Factsheet</h2>
+        <div class="facts-container">
+            <!-- Enrollment and Diversity -->
+            <div class="fact-card">
+                <h3>Total Enrollment</h3>
+                <p><span class="counter" data-start="9500" data-target="10332">10,332</span> students</p>
+            </div>
+            <div class="fact-card">
+                <h3>Undergraduate Students</h3>
+                <p><span class="counter" data-start="5000" data-target="5564">5,564</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>Graduate/Doctoral Students</h3>
+                <p><span class="counter" data-start="4500" data-target="4740">4,740</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>Freshman Class</h3>
+                <p><span class="counter" data-start="800" data-target="913">913</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>International Students</h3>
+                <p><span class="counter" data-start="3800" data-target="4008">4,008</span> from 71 countries</p>
+            </div>
+
+            <!-- Faculty and Research -->
+            <div class="fact-card">
+                <h3>Faculty Members</h3>
+                <p><span class="counter" data-start="300" data-target="386">386</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>Student-Faculty Ratio</h3>
+                <p>1:<span class="counter" data-start="10" data-target="13">13</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>Research Rankings</h3>
+                <p>#2 in North America for research productivity (2018-2022).</p>
+                <p>#5 globally for research output (Financial Times, 2024).</p>
+            </div>
+
+            <!-- Academic Programs -->
+            <div class="fact-card">
+                <h3>Degree Programs</h3>
+                <p><span class="counter" data-start="30" data-target="39">39</span> degree programs</p>
+            </div>
+            <div class="fact-card">
+                <h3>STEM-Designated MS Programs</h3>
+                <p><span class="counter" data-start="5" data-target="10">10</span> STEM-designated MS programs</p>
+            </div>
+
+            <!-- Career Success -->
+            <div class="fact-card">
+                <h3>Internships Facilitated</h3>
+                <p><span class="counter" data-start="2000" data-target="2417">2,417</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>Job Postings</h3>
+                <p><span class="counter" data-start="9000" data-target="10144">10,144</span></p>
+            </div>
+            <div class="fact-card">
+                <h3>Graduate Employment Rate</h3>
+                <p>90% of graduates secure employment within three months of graduation.</p>
+            </div>
+            <div class="fact-card">
+                <h3>Starting Salaries</h3>
+                <p>Starting salaries range from $80,000 to $125,000.</p>
+            </div>
+
+            <!-- Student Experience -->
+            <div class="fact-card">
+                <h3>Student Organizations</h3>
+                <p><span class="counter" data-start="50" data-target="75">75</span>+ student organizations</p>
+            </div>
+            <div class="fact-card">
+                <h3>Community Service Hours</h3>
+                <p><span class="counter" data-start="400000" data-target="443768">443,768</span> hours contributed through UTDserv</p>
+            </div>
+
+            <!-- Global Impact -->
+            <div class="fact-card">
+                <h3>Alumni Worldwide</h3>
+                <p><span class="counter" data-start="50000" data-target="57073">57,073</span> alumni worldwide</p>
+            </div>
+            <div class="fact-card">
+                <h3>JindalConnect Members</h3>
+                <p><span class="counter" data-start="13000" data-target="14000">14,000</span> members on JindalConnect</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rankings Section -->
+    <section id="rankings" class="rankings-section">
+        <h2>Rankings and Recognition</h2>
+        <div class="rankings-container">
+            <div class="ranking-card">
+                <h3>#2</h3>
+                <p>Worldwide and in North America for research contributions (2018-2022) - UTD Top 100 Business School Research Rankings™</p>
+            </div>
+            <div class="ranking-card">
+                <h3>#4</h3>
+                <p>Globally for Supply Chain Management Graduate Programs (Gartner, 2024)</p>
+            </div>
+            <div class="ranking-card">
+                <h3>#5</h3>
+                <p>Globally for research output (Financial Times, 2024)</p>
+            </div>
+            <div class="ranking-card">
+                <h3>#6</h3>
+                <p>Supply Chain Management Undergraduate Programs (Gartner, 2024)</p>
+            </div>
+            <div class="ranking-card">
+                <h3>#7</h3>
+                <p>Online MBA Programs among U.S. public universities (Fortune, 2024)</p>
+            </div>
+            <div class="ranking-card">
+                <h3>#9</h3>
+                <p>MS in Business Analytics Cohort Online among public schools (Fortune, 2024)</p>
+            </div>
+            <div class="ranking-card">
+                <h3>#10</h3>
+                <p>Full-Time MBA among public U.S. universities (U.S. News & World Report, 2024)</p>
+            </div>
+            <!-- Add the rest of the rankings in this format -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with us: 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript for Interactive Sections and Counter Animation -->
+    <script>
+        function toggleSection(section) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(sec => sec.classList.add('hidden')); // Hide all sections
+            document.getElementById(section).classList.remove('hidden'); // Show the clicked section
+        }
+
+        function scrollToContent() {
+            window.scrollTo({
+                top: document.querySelector('.welcome').offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        // Counter animation script
+        document.querySelectorAll('.counter').forEach(counter => {
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target'); // Convert target to number
+                const current = +counter.getAttribute('data-start'); // Start from a smaller number
+
+                const increment = (target - current) / 200; // Adjust this value to control the speed
+
+                if (current < target) {
+                    counter.innerText = `${Math.ceil(current + increment)}`;
+                    counter.setAttribute('data-start', current + increment); // Update the start value
+                    setTimeout(updateCounter, 10); // Controls how fast it updates
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            counter.addEventListener('mouseover', updateCounter); // Start animation on hover
+        });
+    </script>
+
+</body>
+</html>
